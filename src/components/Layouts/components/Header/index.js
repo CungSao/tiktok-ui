@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
+import images from '~/assets/images';
 
 const cx = classNames.bind(styles);
 
@@ -7,8 +8,14 @@ function Header() {
   return (
     <header className={cx('wrapper')}>
       <div className={cx('inner')}>
-        {/* Logo */}
-        {/* Search */}
+        <img src={images.logo} alt="Tiktok" />
+        <div className={cx('search')}>
+          <input placeholder="Search accounts and videos" />
+          <button className={cx('clear')}>{/* Clear */}</button>
+          {/* Loading */}
+          <button className={cx('search-btn')}>{/* Search */}</button>
+        </div>
+        <div className={cx('action')}></div>
       </div>
     </header>
   );
