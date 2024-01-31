@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import classNames from 'classnames/bind';
 import Tippy from '@tippyjs/react/headless';
 
+import Button from '~/components/Button';
 import AccountItem from '~/components/AccountItem';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import styles from './Header.module.scss';
@@ -41,12 +42,14 @@ function Header() {
             <input placeholder="Search accounts and videos" />
             <button className={cx('clear')}>{/* Clear */}</button>
             {/* Loading */}
-            <Tippy content="Tìm kiếm" placement="right">
-              <button className={cx('search-btn')}>{/* Search */}</button>
-            </Tippy>
+            <button className={cx('search-btn')}>{/* Search */}</button>
           </div>
         </Tippy>
-        <div className={cx('action')}></div>
+        <div className={cx('action')}>
+          {/* <Button primary href='https://fullstack.edu.vn/learning-paths' target="_blank" onClick={() => alert('Log in!')}> */}
+          <Button text> Upload </Button>
+          <Button primary>Log in</Button>
+        </div>
       </div>
     </header>
   );
