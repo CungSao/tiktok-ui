@@ -115,7 +115,7 @@ function Header() {
             {currentUser ? (
               <Image
                 className={cx('user-avatar')}
-                src="ahttps://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/600c9a7316cb32f3f17dce6e629a1d84.jpeg?lk3s=a5d48078&x-expires=1706918400&x-signature=G4O512Xa5t5Rty84S46Ml0FkpdQ%3D"
+                src="https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/600c9a7316cb32f3f17dce6e629a1d84.jpeg?lk3s=a5d48078&x-expires=1706918400&x-signature=G4O512Xa5t5Rty84S46Ml0FkpdQ%3D"
                 alt="Nguyen Van A"
                 fallback="https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png"
               />
