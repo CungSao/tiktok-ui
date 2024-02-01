@@ -4,6 +4,7 @@ import Tippy from '@tippyjs/react';
 import HeadlessTippy from '@tippyjs/react/headless';
 import 'tippy.js/dist/tippy.css';
 
+import Image from '~/components/Image';
 import Menu from '~/components/Popper/Menu';
 import Button from '~/components/Button';
 import AccountItem from '~/components/AccountItem';
@@ -150,10 +151,11 @@ function Header() {
           )}
           <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
             {currentUser ? (
-              <img
+              <Image
                 className={cx('user-avatar')}
-                src="https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/600c9a7316cb32f3f17dce6e629a1d84.jpeg?lk3s=a5d48078&x-expires=1706918400&x-signature=G4O512Xa5t5Rty84S46Ml0FkpdQ%3D"
+                src="ahttps://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/600c9a7316cb32f3f17dce6e629a1d84.jpeg?lk3s=a5d48078&x-expires=1706918400&x-signature=G4O512Xa5t5Rty84S46Ml0FkpdQ%3D"
                 alt="Nguyen Van A"
+                fallback="https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png"
               />
             ) : (
               <button className={cx('more-btn')}>
