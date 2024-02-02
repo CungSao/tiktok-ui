@@ -70,7 +70,6 @@ function Search() {
               {searchResult.map((result) => (
                 <AccountItem key={result.id} data={result} />
               ))}
-              <AccountItem />
             </PopperWrapper>
           </div>
         )}
