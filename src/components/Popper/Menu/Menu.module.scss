@@ -15,6 +15,10 @@
   padding-bottom: 8px;
 }
 
+.menu-body {
+  overflow-y: auto;
+}
+
 .menu-item {
   width: 100%;
 
@@ -30,6 +34,7 @@
 // Header
 .header {
   position: relative;
+  flex-shrink: 0;
   height: 50px;
   margin-top: -8px;
 }
